@@ -3,19 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm-run-all --parallel dev:next dev:server",
+    "dev:next": "next dev",
+    "dev:server": "json-server --watch data/db.json --port 3001",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
+    "axios": "^1.8.4",
+    "bootstrap": "^5.3.5",
+    "next": "15.3.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.1"
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
-    "@eslint/eslintrc": "^3"
+    "json-server": "^1.0.0-beta.3",
+    "npm-run-all": "^4.1.5"
   }
 }

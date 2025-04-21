@@ -1,3 +1,147 @@
+.custom-carousel .carousel-caption h5,
+.custom-carousel .carousel-caption p {
+  color: #fff;
+  margin: 0;
+  font-size: 2;
+  line-height: 1.3;
+}
+
+.custom-carousel .carousel-item img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.custom-carousel .carousel-caption {
+  background: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah */
+  padding: 1rem;
+  border-radius: 8px;
+  display: inline-block;
+  max-width: 80%;
+}
+
+.custom-carousel {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6),
+              0 0 12px rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-carousel:hover {
+  transform: scale(1.01);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.7),
+              0 0 24px rgba(255, 255, 255, 0.1);
+}
+
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon {
+  filter: invert(100%) grayscale(100%) brightness(0%);
+}
+
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.product-carousel .carousel-control-prev-icon,
+.product-carousel .carousel-control-next-icon {
+  filter: invert(100%) grayscale(100%) brightness(0%);
+}
+
+.form-select {
+  width: 180px; 
+  padding: 8px; 
+  font-size: 16px; 
+  border: 2px solid #febd69;
+  border-radius: 5px;
+  background-color: white; 
+  cursor: pointer; 
+}
+
+.form-select:hover {
+  border-color: #ff9100;
+  background-color: #febd69;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: #ff9100;
+  box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+  background-color: #febd69;
+}
+
+.form-control {
+  width: 180px; 
+  padding: 8px; 
+  font-size: 16px; 
+  border: 2px solid #febd69; 
+  border-radius: 5px; 
+  background-color: white; 
+  transition: all 0.3s ease-in-out;
+}
+
+.form-control:hover {
+  border-color: #ff9100;
+  background-color: #febd69;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #ff9100;
+  box-shadow: 0 0 5px rgba(255, 145, 0, 0.5);
+  background-color: #febd69;
+}
+
+.btn-primary {
+  background-color: #febd69; 
+  color: #131921; 
+  border: none; 
+  border-radius: 5px; 
+}
+
+.btn-primary:hover {
+  background-color: #ff9100;
+}
+
+.btn-primary:active {
+  background-color: #bd6b00;
+}
+
+.navbar-custom {
+  background-color: #131921 !important;
+}
+
+.navbar-custom .navbar-brand img {
+  height: 70px;
+  object-fit: contain;
+}
+
+.navbar-custom .cart-link {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-custom .cart-link .badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  font-size: 0.7rem;
+}
+
+.navbar-custom .nav-link {
+  color: white;       
+  font-size: 1.4rem;            
+  font-weight: 500;            
+}
+
+.navbar-custom .nav-link:hover {
+  color: #febd69;     
+}
+
+/*
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -40,3 +184,4 @@ a {
     color-scheme: dark;
   }
 }
+  */
