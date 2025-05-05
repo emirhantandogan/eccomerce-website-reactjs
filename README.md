@@ -35,6 +35,9 @@
     - `json-server` serving `db.json` as RESTful API  
     - `npm-run-all` to run frontend and backend in parallel  
 
+## Running the Project Summary
+- npm install
+- npm run dev
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
