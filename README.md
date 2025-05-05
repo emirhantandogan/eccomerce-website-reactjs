@@ -1,3 +1,41 @@
+## CS391 Project 2
+- Emirhan Tandoğan S028745
+- This project is a web application built with ReactJS, NextJS, NodeJS, and Bootstrap. It includes a Home page, Product Detail page, Shopping Cart, and Add Campaign page. All data is managed via RESTful services using json-server, with no local storage, and proper HTTP methods are used for all operations.
+
+## Features
+
+- **Home Page** 
+    - Page contain: Navigation Bar, Campaign Carousel, Search/Sort/Category Selection Bar, Product List.
+    - Page has responsive grid showing 1-5 products per row depending on the screen width.
+    - Each product has thumbnail image, name, price, destription and add to cart button.
+    - Campaign carousel, navigation bar, filterable product list and each product's card is created as components. 
+- **Product Detail Page**
+    - Page contain, Carousel for product images,name, price per product, total price, destription, add to cart button, go to cart button, reviews section and add review form.
+    - Product details part and add review form part is created as two seperate component and merged into one page.
+    - Each review contain username, title, start and review text.
+- **Shopping Cart Page**
+    - View items added to cart, adjust quantities (with PUT), remove items (DELETE).
+    - Real time total calculations.
+    - Additional delivery fee.
+    - Empty cart button and process checkout button.
+    - When proceed checkout button is clicked, order summary view is shown (containing total price, delivery fee and amount to pay).
+- **Add Campaign page**  
+    - Select a product and discount percent to create new campaigns.
+    - Already added campaigns also shown below.  
+
+## Technologies Used
+
+- **Frontend**  
+    - Next.js 
+    - React
+    - Bootstrap 5 for layout & components  
+    - Axios for HTTP requests  
+
+- **Backend**  
+    - `json-server` serving `db.json` as RESTful API  
+    - `npm-run-all` to run frontend and backend in parallel  
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
 ## Getting Started
@@ -38,3 +76,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+

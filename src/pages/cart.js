@@ -100,7 +100,7 @@ export default function CartPage() {
                       <input
                         type="number"
                         min="1"
-                        className="form-control"
+                        className="form-control w-100"
                         value={item.quantity}
                         onChange={e =>
                           handleUpdate(item.id, {

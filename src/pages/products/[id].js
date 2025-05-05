@@ -69,7 +69,9 @@ export default function ProductDetail() {
             <div className="col-md-6">
               <Carousel
                 className="product-carousel"
-                interval={null}           
+                interval={null}
+                controls={product.images.length > 1}
+                indicators={product.images.length > 1}      
               >
                 {product.images?.map((src, idx) => (
                   <Carousel.Item key={idx}>
